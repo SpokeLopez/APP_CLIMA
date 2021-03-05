@@ -18,9 +18,11 @@
                     <h3 id="weather-string"></h3>
                     <img src="" alt="image-weather" id="weather-image">
                     <ul class="list-group mt-3">
-                    <li class="list-group-item d-flex justify-content-center align-items-center" id="weather-humidity">
+                    <li class="list-group-item d-flex justify-content-center align-items-center">
+                        <span class="badge badge-primary" id="weather-humidity"></span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-center align-items-center" id="weather-wind">
+                    <li class="list-group-item d-flex justify-content-center align-items-center">    
+                        <span class="badge badge-primary" id="weather-wind"></span>
                     </li>
                     </ul>
                 </div>
@@ -31,10 +33,10 @@
                                 <input type="text" id="city" class="form-control" placeholder="Ciudad" autofocus>
                             </div>
                             <div class="form-group">
-                                <input type="text" id="countryCode" class="form-control" placeholder="Código de la ciudad" autofocus>
+                                <input type="text" id="countryCode" class="form-control" placeholder="Código de la ciudad" autofocus maxlength="2">
                             </div>
                             <div class="form-group">
-                                <button type="button" class="btn btn-success" id="changeWeather">Obtener</button>
+                                <button type="submit" class="btn btn-success" id="changeWeather">Obtener</button>
                             </div>
                         </form>
                     </div>

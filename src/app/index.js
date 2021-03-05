@@ -89,7 +89,6 @@ document.getElementById('changeWeather').addEventListener('click', (e) =>{
     weather.changeLocation(city, countryCode);
     store.setLocationData(city, countryCode);
     fetchWeather();
-    e.preventDefault();
 })
 
 document.addEventListener('DOMContentLoaded', fetchWeather);
